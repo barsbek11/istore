@@ -1,0 +1,19 @@
+@import '../variables';
+
+.suptitle {
+    &-container {
+        max-width: $mainMaxwidth-1140;
+        width: 100%;
+        margin: 0 auto;
+        
+        .suptitle-block {
+            a {
+                img {
+                    width: 80px;
+                    height: 32px;
+                }
+                
+            }
+        }
+    }
+}

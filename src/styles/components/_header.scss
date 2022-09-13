@@ -1,0 +1,45 @@
+@import '../variables';
+
+
+
+.header {
+    padding: 3px 0;
+    background-color: $headerBackground;
+    &-container {
+        max-width: $mainMaxwidth-1140;
+        width: 100%;
+        margin: 0 auto;
+        .header-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header-list{
+                display: flex;
+                align-items: center;
+                gap: 35px;
+                &-item {
+                }
+            }
+        }
+        .header-auth {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            img {
+                width: 16px;
+            }  
+        }
+    }
+}
+    a {
+        color: $navItemTextColor;
+        font-size: 0.938rem;
+    }
+
+//Acttive-color
+.active {
+    color: $activeTextColor !important;
+
+    transition: 0.6s;
+}
