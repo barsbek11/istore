@@ -1,0 +1,150 @@
+@import '../variables';
+@import '../mixin';
+
+
+.about {
+    &-container {
+        @include flex (0, '');
+        max-width: $mainMaxWidth-1200;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 15px 0;
+        margin-bottom: 16px;
+        height: 40px;
+        .about-breadcrumb {
+            @include flex (0, space-between);
+            padding: 12px 16px;
+            :nth-child(3) {
+                color: $secondTextColor;
+                font-size: 12px;
+            }
+        }
+    }
+    .about-us-first {
+        .first-container {
+            .text {
+                @include flexColumn (0);
+                text-align: center;
+                margin: 68px 0 48px;
+                h3 {
+                    font-size: 50px;
+                    line-height: 100%;
+                    margin-bottom: 48px;
+                }
+                img {
+                    @include wh (1170px, auto)
+                }
+            }
+        }
+    }
+    .about-us-second {
+        @include flex (30px, center);
+        .second-container {
+            @include flex(0, center);
+            max-width: $mainMaxWidth-1200;
+            .second-text {
+                p {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    color: #212529;
+                }
+                @include wh (555px, 516px);
+                h5 {
+                    font-weight: 500;
+                    font-size: 30px;
+                    margin-bottom: 48px;
+                    line-height: 120%;
+                }
+            }
+            .about-us-second-container-text {
+                @include wh (580px, auto);
+                color: $secondTextColor;
+                font-size: 15px;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 15px;
+                .container-text {
+                    @include wh (269px, 185px);
+                    border: 1px solid #dfdfdf;
+                    border-radius: 5px;
+                    padding: 15px;
+                    .container--text {
+                        display: flex;
+                        p {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: $mainTextColor;
+                        }
+                        img {
+                            @include wh (35px, 35px); 
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+    }
+    
+}
+.feedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .feedback-container {
+        @include flex (0, center);
+        width: 1140px;
+        div {
+            max-width: $mainMaxWidth-1200;
+            margin-bottom: 48px;
+            h5 {
+                text-align: center;
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 120%;
+                color: $mainTextColor;
+            }
+        }
+    }
+    .frame {
+        @include flex (68px, center);
+        max-width: $mainMaxWidth-1200;
+        
+        .about-us-map {
+        @include wh (456px, 318px)
+        } 
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            @include wh (456px, 325px);
+            background: #f5f5f5;
+            .contact-container {
+                @include wh (211.75px, 138.25px);
+                padding: 48px 15px 0 15px;
+                div {
+                    display: flex;
+                }
+                div p {
+                    color: $secondTextColor;
+                    margin-left: 8px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 125%;
+                    color: $mainTextColor;
+                    margin-top: 6px;
+                }
+                a {
+                    font-size: 18px;
+                    line-height: 125%;
+                    color: $mainTextColor;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+    
+}

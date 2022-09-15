@@ -1,6 +1,9 @@
 @import './normalize' ;
 @import './components/header';
 @import './components/subtitle';
+@import './components/productNavigation';
+@import './components/about';
+
 
 #app {
     min-height: 100vh;
